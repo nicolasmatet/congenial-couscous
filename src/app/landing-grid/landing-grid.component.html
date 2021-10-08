@@ -1,0 +1,8 @@
+<div class="landing-title">ON JOUE ?</div>
+
+<div class="landing-grid" fxLayout="row wrap" fxLayoutAlign="center center">
+  <div *ngFor="let animal of animals" class="landing-grid-image" fxFlex.lt-lg="40" fxFlex.lt-md="120px"
+       (click)="navigate(animal)">
+    <img [src]="'assets/img/' +animal+'/0.png'">
+  </div>
+</div>

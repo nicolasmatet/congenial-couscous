@@ -1,0 +1,10 @@
+<div class="landing-title">VOTRE CHOIX ?</div>
+
+<div class="landing-grid" fxLayout="row wrap" fxLayoutAlign="center center">
+  <div *ngFor="let image of imgs" class="landing-grid-image" fxFlex.lt-lg="40" fxFlex.lt-md="120px"
+       (click)="navigate(animal, image)">
+    <img [src]="'assets/img/' + animal + '/' + image + '.png'">
+  </div>
+</div>
+
+
